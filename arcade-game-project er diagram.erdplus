@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ERDPlusFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="3">
+  <Diagrams>
+    <StoreDiagram Kind="Erd">
+      <Objects>
+        <StoreRelationshipConnector Id="1792" EntityId="154" RelationshipId="944" IsEntitySlot1="false" />
+        <StoreRelationshipConnector Id="1791" EntityId="908" RelationshipId="939" IsEntitySlot1="false" />
+        <StoreRelationshipConnector Id="1790" EntityId="154" RelationshipId="939" IsEntitySlot1="true" />
+        <StoreRelationshipConnector Id="1789" EntityId="915" RelationshipId="936" IsEntitySlot1="false" />
+        <StoreRelationshipConnector Id="1788" EntityId="908" RelationshipId="936" IsEntitySlot1="true" />
+        <StoreRelationshipConnector Id="1787" EntityId="924" RelationshipId="933" IsEntitySlot1="false" />
+        <StoreRelationshipConnector Id="1786" EntityId="908" RelationshipId="933" IsEntitySlot1="true" />
+        <StoreRelationshipConnector Id="1785" EntityId="8" RelationshipId="168" IsEntitySlot1="true" />
+        <StoreRelationshipConnector Id="1784" EntityId="136" RelationshipId="151" IsEntitySlot1="false" />
+        <StoreRelationshipConnector Id="1783" EntityId="8" RelationshipId="151" IsEntitySlot1="true" />
+        <StoreRelationshipConnector Id="1782" EntityId="8" RelationshipId="20" IsEntitySlot1="true" />
+        <StoreRelationshipConnector Id="1781" EntityId="15" RelationshipId="20" IsEntitySlot1="false" />
+        <StoreRelationshipConnector Id="1780" EntityId="1002" RelationshipId="168" IsEntitySlot1="false" />
+        <StoreRelationshipConnector Id="1779" EntityId="15" RelationshipId="944" IsEntitySlot1="true" />
+        <StoreEntity Id="8" Name="user" X="119" Y="152" Width="96" Height="48" Kind="Regular" />
+        <StoreAttribute Id="9" Name="Username" X="52" Y="27" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="true" IsOptional="false" AssignedParentId="8" />
+        <StoreAttribute Id="11" Name="email" X="15" Y="83" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="8" />
+        <StoreAttribute Id="13" Name="Password" X="8" Y="138" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="8" />
+        <StoreEntity Id="15" Name="game Score" X="407" Y="84" Width="96" Height="48" Kind="Weak" />
+        <StoreAttribute Id="16" Name="Username" X="322" Y="21" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="15" />
+        <StoreAttribute Id="18" Name="Score" X="420" Y="14" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="15" />
+        <StoreRelationship Id="20" Name="how score has the user" X="262" Y="77" Width="96" Height="48" Kind="Regular">
+          <Slot1 Participation="Unspecified" Cardinality="Many" RoleName="" />
+          <Slot2 Participation="Unspecified" Cardinality="Many" RoleName="" />
+        </StoreRelationship>
+        <StoreEntity Id="136" Name="battleship" X="147" Y="475" Width="96" Height="48" Kind="Regular" />
+        <StoreAttribute Id="137" Name="pris" X="242" Y="554" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="136" />
+        <StoreAttribute Id="139" Name="type" X="138" Y="557" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="136" />
+        <StoreAttribute Id="141" Name="name" X="25" Y="550" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="136" />
+        <StoreAttribute Id="143" Name="date" X="511" Y="32" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="15" />
+        <StoreAttribute Id="146" Name="game money" X="14" Y="206" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="8" />
+        <StoreAttribute Id="148" Name="battleship" X="159" Y="32" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="8" />
+        <StoreRelationship Id="151" Name="has" X="129" Y="300" Width="96" Height="48" Kind="Regular">
+          <Slot1 Participation="Unspecified" Cardinality="Many" RoleName="" />
+          <Slot2 Participation="Unspecified" Cardinality="Many" RoleName="" />
+        </StoreRelationship>
+        <StoreEntity Id="154" Name="medals score" X="787" Y="92" Width="96" Height="48" Kind="Weak" />
+        <StoreRelationship Id="168" Name="posts to" X="230" Y="232" Width="96" Height="48" Kind="Regular">
+          <Slot1 Participation="Unspecified" Cardinality="Many" RoleName="" />
+          <Slot2 Participation="Unspecified" Cardinality="Many" RoleName="" />
+        </StoreRelationship>
+        <StoreEntity Id="908" Name="level" X="938" Y="349" Width="96" Height="48" Kind="Regular" />
+        <StoreAttribute Id="909" Name="levelid" X="933" Y="448" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="true" IsOptional="false" AssignedParentId="908" />
+        <StoreAttribute Id="911" Name="level settings" X="1033" Y="297" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="908" />
+        <StoreAttribute Id="913" Name="boss" X="1046.5433070866143" Y="407" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="908" />
+        <StoreEntity Id="915" Name="bosses" X="1105" Y="174" Width="96" Height="48" Kind="Regular" />
+        <StoreAttribute Id="916" Name="bossid" X="1105" Y="90" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="true" IsOptional="false" AssignedParentId="915" />
+        <StoreAttribute Id="918" Name="name" X="1177" Y="126" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="915" />
+        <StoreAttribute Id="920" Name="HP" X="1250.5433070866143" Y="196" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="915" />
+        <StoreAttribute Id="922" Name="SP" X="1201.5433070866143" Y="264" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="915" />
+        <StoreEntity Id="924" Name="monster" X="806" Y="573" Width="96" Height="48" Kind="Regular" />
+        <StoreAttribute Id="925" Name="monsterid" X="767" Y="637" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="true" IsOptional="false" AssignedParentId="924" />
+        <StoreAttribute Id="927" Name="name" X="878" Y="525" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="924" />
+        <StoreAttribute Id="929" Name="HP" X="906" Y="573" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="924" />
+        <StoreAttribute Id="931" Name="SP" X="878" Y="621" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="924" />
+        <StoreRelationship Id="933" Name="Monster to level" X="734" Y="447" Width="96" Height="48" Kind="Regular">
+          <Slot1 Participation="Unspecified" Cardinality="Many" RoleName="" />
+          <Slot2 Participation="Unspecified" Cardinality="One" RoleName="" />
+        </StoreRelationship>
+        <StoreRelationship Id="936" Name="boss to level" X="985" Y="196" Width="96" Height="48" Kind="Regular">
+          <Slot1 Participation="Unspecified" Cardinality="One" RoleName="" />
+          <Slot2 Participation="Unspecified" Cardinality="One" RoleName="" />
+        </StoreRelationship>
+        <StoreRelationship Id="939" Name="medals" X="845" Y="263" Width="96" Height="48" Kind="Regular">
+          <Slot1 Participation="Unspecified" Cardinality="One" RoleName="" />
+          <Slot2 Participation="Unspecified" Cardinality="Many" RoleName="" />
+        </StoreRelationship>
+        <StoreAttribute Id="942" Name="userid" X="25" Y="266" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="true" IsOptional="false" AssignedParentId="8" />
+        <StoreRelationship Id="944" Name="medals to user" X="558" Y="107" Width="96" Height="48" Kind="Regular">
+          <Slot1 Participation="Unspecified" Cardinality="Unspecified" RoleName="" />
+          <Slot2 Participation="Unspecified" Cardinality="Many" RoleName="" />
+        </StoreRelationship>
+        <StoreAttribute Id="949" Name="battleshipid" X="281" Y="481" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="true" IsOptional="false" AssignedParentId="136" />
+        <StoreEntity Id="1002" Name="Posts" X="356" Y="303" Width="96" Height="48" Kind="Regular" />
+        <StoreAttribute Id="1003" Name="text" X="510" Y="284" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="1002" />
+        <StoreAttribute Id="1005" Name="date" X="475" Y="344" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="1002" />
+        <StoreAttribute Id="1007" Name="Postsid" X="419" Y="404" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="true" IsOptional="false" AssignedParentId="1002" />
+        <StoreAttribute Id="1009" Name="ppostis" X="311" Y="394" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="1002" />
+        <StoreAttribute Id="1011" Name="subject" X="245" Y="357" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="1002" />
+        <StoreAttribute Id="1305" Name="min score" X="942" Y="71" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="154" />
+        <StoreAttribute Id="1778" Name="type" X="848" Y="18" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="154" />
+        <StoreEntity Id="1824" Name="currency-Converter" X="620" Y="268" Width="96" Height="48" Kind="Regular" />
+        <StoreAttribute Id="1825" Name="currencyConverterid" X="608" Y="182" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="true" IsOptional="false" AssignedParentId="1824" />
+        <StoreAttribute Id="1827" Name="game money" X="692" Y="220" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="1824" />
+        <StoreAttribute Id="1829" Name="points" X="720" Y="268" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="1824" />
+        <StoreAttribute Id="1833" Name="pris" X="620" Y="352" Width="96" Height="48" IsComposite="false" IsDerived="false" IsMultivalue="false" IsUnique="false" IsOptional="false" AssignedParentId="1824" />
+      </Objects>
+      <Settings Units="Millimeters" Orientation="Landscape" PresetPaperId="ISO_A3" SheetWidth="297" SheetHeight="420" LeftMargin="25" TopMargin="25" RightMargin="25" BottomMargin="25" />
+    </StoreDiagram>
+  </Diagrams>
+</ERDPlusFile>

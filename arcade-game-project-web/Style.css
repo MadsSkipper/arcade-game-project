@@ -1,0 +1,126 @@
+﻿body {
+    background-color:#000000;
+    font-family: Robote, Sans-serif;
+    line-height: normal;
+    font-size: 13px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+#Battle
+{
+    background-image:url(Images/trifid_gendler_960.jpg);
+    height: 827px;
+    
+
+}
+nav {
+    background-color: #b1b1b1;
+    font-family: Georgia, 'Times new Roman', Times serif;
+    line-height: normal;
+    font-size: 11px;
+    font-weight: bold;
+    color: #807e7e;
+    text-align: center;
+}
+
+    nav a {
+        color: #807e7e;
+    }
+
+#imglogo {
+    height: 50px;
+    width: 50px;
+}
+
+header {
+    background-color: #343434;
+}
+
+#rom {
+    height: 25px;
+}
+
+
+#Searchdiv {
+    margin-top: 5px;
+    float: right;
+    margin-right: 15px;
+}
+
+#page {
+    min-height: 768px;
+    background-color: #dcdcdc;
+}
+
+.btn {
+  background: #2b2b2b;
+  background-image: -webkit-linear-gradient(top, #2b2b2b, #000000);
+  background-image: -moz-linear-gradient(top, #2b2b2b, #000000);
+  background-image: -ms-linear-gradient(top, #2b2b2b, #000000);
+  background-image: -o-linear-gradient(top, #2b2b2b, #000000);
+  background-image: linear-gradient(to bottom, #2b2b2b, #000000);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #adabad;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #858585;
+  background-image: -webkit-linear-gradient(top, #858585, #292929);
+  background-image: -moz-linear-gradient(top, #858585, #292929);
+  background-image: -ms-linear-gradient(top, #858585, #292929);
+  background-image: -o-linear-gradient(top, #858585, #292929);
+  background-image: linear-gradient(to bottom, #858585, #292929);
+  text-decoration: none;
+}
+nav a:hover {
+    background-color:#f1f1f1;
+}
+ 
+.listetb{
+    width:100%;
+}
+.se
+{
+    margin-left:2%;
+    margin-right:2%;    
+}
+.melle {
+    height:24px;
+    
+}
+#login
+{
+    margin-left:25%;
+    margin-right:25%;
+}
+#login h1{
+    color:#b1b1b1;
+    font-family:Tahoma;
+    font-size:25px;
+
+}
+#login b
+{
+color:#b1b1b1;
+font-family:Tahoma;
+    font-size:15px;
+}
+#login a
+{
+color:#1166ff;
+font-family:Tahoma;
+    font-size:15px;
+}
+div{
+    background-color:#dcdcdc;    
+}
+#gameCanvas
+{
+    height:640px;
+    width:480px;
+}
